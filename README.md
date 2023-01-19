@@ -1,5 +1,7 @@
 # node18-local-path-traversal-issue
 
+https://github.com/nodejs/node/issues/46270
+
 package.json local path traversal working with Node 19, not with Node < 19
 
 Structure:

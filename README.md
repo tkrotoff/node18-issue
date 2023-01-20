@@ -2,6 +2,21 @@
 
 https://github.com/nodejs/node/issues/46270
 
+<br><br>
+
+## Solution
+
+With npm < 9 use `npm install --install-links`: https://github.com/npm/cli/issues/6033#issuecomment-1382444675
+
+npm < 9 uses symlinks by default: https://docs.npmjs.com/cli/v8/commands/npm-install#install-links  
+while npm >= 9 does not (which is good): https://docs.npmjs.com/cli/v9/commands/npm-install#install-links
+
+> protocol dependencies will be packed and installed as regular dependencies instead of creating a symlink
+
+npm < 8 (Node.js 14) does not support option `--install-links`
+
+<br><br>
+
 package.json local path traversal working with Node 19, not with Node < 19
 
 Structure:

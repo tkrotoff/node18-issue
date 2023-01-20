@@ -17,4 +17,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      # https://docs.npmjs.com/cli/v9/commands/npm-install#install-links
       - run: cd subfolder && npm install && npm run build
